@@ -11,10 +11,10 @@ long factorial(int w) {
 double Maclaurin_seq(double x, int K, int func, int p) {
     int j; int i; double y; int n; long r; long k;
     k = pow(10, (p + 1)); r = 5;
-    while (r >= 5) // keep do re-calculate if result not accurate enough
+    while (r >= 5)
     {
     j = 1; i = 0; y = 0; n = 0; r = 0;
-        for (i = 0; i <= K; i+=1) // program part for numeric calculation
+        for (i = 0; i <= K; i+=1) 
             {
             n = 2*i + func - 1;
             y += j * pow(x, n) / factorial(n);
